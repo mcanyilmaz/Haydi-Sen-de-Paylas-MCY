@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mustafacan.mustafacanyilmazbitirmeprojesi.LoginAndRegister">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:fontFamily="casual"
+            android:textStyle="italic"
+            android:id="@+id/textview"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:layout_below="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/splashscreen"
+            android:id="@+id/splashScreenLogo"
+            />
+
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_name"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:layout_below="@+id/splashScreenLogo"
+            android:drawableLeft="@mipmap/ic_person_outline_black_24dp"
+            android:hint="Kullanıcı Adı" />
+
+        <EditText
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/main_password"
+            android:layout_below="@+id/main_name"
+            android:drawableLeft="@mipmap/ic_https_black_24dp"
+            android:hint="Şifre" />
+
+        <CheckBox
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Beni Hatırla"
+            android:textColorHint="#d8ff0000"
+            android:id="@+id/remember_me"
+            android:layout_below="@id/main_password"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:background="#5c9dfd"
+            android:onClick="main_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:textColor="#FFFFFF"
+            android:id="@+id/main_login"
+            android:layout_below="@+id/remember_me"
+            />
+
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:background="#5c9dfd"
+            android:onClick="main_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol"
+            android:id="@+id/main_register"
+            android:layout_below="@+id/main_login"
+            />
+        <Button
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:background="#5c9dfd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Olmadan Devam Et "
+            android:gravity="center"
+            android:layout_below="@+id/main_register"
+            android:onClick="continue_without"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

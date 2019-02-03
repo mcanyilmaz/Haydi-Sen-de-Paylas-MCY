@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mustafacan.mustafacanyilmazbitirmeprojesi.Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/textview"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/splashscreen"
+        android:id="@+id/register_image"
+        />
+
+    <EditText
+        android:drawableLeft="@mipmap/ic_person_outline_black_24dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_name"
+        android:layout_below="@+id/register_image"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:hint="Kullanıcı Adı" />
+
+    <EditText
+        android:drawableLeft="@mipmap/ic_https_black_24dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/register_password"
+        android:layout_below="@+id/register_name"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:hint="Şifre" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifreyi Göster"
+        android:layout_below="@id/register_name"
+        android:layout_marginLeft="230dp"
+        android:id="@+id/show_password"
+        android:maxLines="1"
+
+        />
+
+    <EditText
+        android:drawableLeft="@mipmap/ic_email_black_24dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:id="@+id/register_email"
+        android:layout_below="@+id/register_password"
+        android:maxLines="1"
+        android:hint="Email" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/register_email"
+            android:id="@+id/captcha_im"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            />
+
+        <EditText
+            android:drawableLeft="@mipmap/ic_keyboard_arrow_right_black_24dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/register_email"
+            android:id="@+id/insertedCaptca_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Yandaki İfadeyi Giriniz "
+            android:maxLength="10"
+            android:maxLines="1"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_below="@+id/captcha_im"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ - * Rakam "
+                android:id="@+id/aritmatika_rb"
+                android:checked="true"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harf Ve Rakam"
+                android:id="@+id/numLet_rb" />
+        </RadioGroup>
+
+        <Button
+            android:layout_below="@+id/radioGroup"
+            android:id="@+id/refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yenile"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_below="@id/refresh_btn"
+            android:id="@+id/result_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:onClick="register_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol "
+            android:id="@+id/register_register"
+            android:layout_below="@+id/result_tv"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

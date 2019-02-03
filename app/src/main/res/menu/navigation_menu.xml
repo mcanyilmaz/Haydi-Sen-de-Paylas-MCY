@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_anasayfa"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="Anasayfa"
+        />
+
+    <item android:id="@+id/nav_haberekle"
+        android:icon="@mipmap/ic_message_black_24dp"
+        android:title="Haber Ekle"
+        />
+
+
+    <item android:id="@+id/nav_cikis"
+        android:icon="@mipmap/ic_power_settings_new_black_24dp"
+        android:title="Çıkış"
+        />
+
+
+</menu>

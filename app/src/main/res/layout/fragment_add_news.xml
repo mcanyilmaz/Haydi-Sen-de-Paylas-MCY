@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mustafacan.mustafacanyilmazbitirmeprojesi.AddNews">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Haber Ekleme"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/txt_haber_1"
+        />
+
+    <EditText
+        android:layout_below="@id/txt_haber_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adınız ve Soyadınız"
+        android:id="@+id/et_haber_adsoyad"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:drawableLeft="@mipmap/ic_person_outline_black_24dp"
+        />
+
+    <EditText
+        android:layout_below="@id/et_haber_adsoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Konu Başlığı"
+        android:id="@+id/et_haber_basligi"
+        android:drawableLeft="@mipmap/ic_subtitles_black_24dp"
+        />
+
+    <EditText
+        android:layout_below="@+id/et_haber_basligi"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/et_haber_yazi"
+        android:hint="Girmek İstediğiniz Haberi Giriniz"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:drawableLeft="@mipmap/ic_message_black_24dp"
+        />
+
+    <Button
+        android:layout_below="@+id/et_haber_yazi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haberi Ekle"
+        android:id="@+id/haber_ekle"
+        />
+    </RelativeLayout>
+
+</ScrollView>
